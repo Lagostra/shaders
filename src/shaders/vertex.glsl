@@ -9,6 +9,6 @@ float random(vec2 st) {
 void main() {
   vec4 tempPos = projectionMatrix * modelViewMatrix * vec4(position, 0.51);
   float rand = random(vec2(tempPos[0], tempPos[1]));
-  tempPos += rand;
+  tempPos += rand * (mod(u_time, 0.5) - 0.25);
   gl_Position = vec4(tempPos[0], tempPos[1], tempPos[2], tempPos[3]);
 }
