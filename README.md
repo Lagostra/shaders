@@ -17,8 +17,6 @@ For flere av oppgavene kan det være nyttig å ta en titt på eksemplene på [ht
 ### 1. Tilfeldig støy 📣
 Vi begynner enkelt: Vis tilfeldig støy på skjermen kun ved hjelp av en fragment shader!
 
-> **Tips:** GLSL har en innebygd funksjon `noise(x)` 🤫
-
 ### 2. Tegn en firkant ⬜
 
 Kun støy blir litt kjedelig i lengden – prøv å i stedet tegne en firkant! Farge velger du selv ☺️
