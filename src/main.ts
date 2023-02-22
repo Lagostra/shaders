@@ -4,7 +4,6 @@ import {
   PerspectiveCamera,
   WebGLRenderer,
   BoxGeometry,
-  MeshBasicMaterial,
   ShaderMaterial,
   Mesh,
   Clock,
@@ -52,6 +51,9 @@ const clock = new Clock();
 
 const animate = () => {
   uniforms.u_time.value = clock.getElapsedTime();
+
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
 
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
