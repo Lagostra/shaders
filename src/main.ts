@@ -42,6 +42,7 @@ const material = new ShaderMaterial({
 });
 
 const cube = new Mesh(geometry, material);
+cube.position.x -= 2.0;
 cube.rotation.x = 0.5;
 cube.rotation.y = 0.5;
 scene.add(cube);
@@ -55,6 +56,9 @@ const animate = () => {
 
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
+
+  cube.rotation.x += 0.05;
+  cube.rotation.y += 0.05;
 };
 
 animate();
